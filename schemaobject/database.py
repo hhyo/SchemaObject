@@ -1,3 +1,4 @@
+# coding:utf-8
 from schemaobject.option import SchemaOption
 from schemaobject.table import table_schema_builder
 from schemaobject.procedure import procedure_schema_builder

@@ -1,3 +1,4 @@
+# coding:utf-8
 class OrderedDict(dict):
     """
     A Dictionary whose items are returned in the order they were first added
@@ -27,7 +28,7 @@ class OrderedDict(dict):
         return [(k, super(OrderedDict, self).__getitem__(k)) for k in self._sequence]
 
     def __iter__(self):
-        return self.iterkeys()
+        return iter(self.keys())
 
     def __next__(self):
         i = self._current

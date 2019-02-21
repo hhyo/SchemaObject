@@ -1,14 +1,15 @@
 #!/usr/bin/env python
+# coding: utf-8
 from setuptools import setup
 
 setup(
-    name='SchemaObject',
+    name='Schema-Object',
     packages=['schemaobject'],
     version='0.5.10',
     description="Iterate over a MySQL database schema as a Python object.",
     author="Mitch Matuson, Mustafa Ozgur",
     author_email="code@matuson.com, root@mit.sh",
-    url="http://matuson.com/code/schemaobject",
+    url="https://github.com/hhyo/SchemaObject",
     keywords=["MySQL", "database", "schema"],
     classifiers=[
         "Intended Audience :: Developers",

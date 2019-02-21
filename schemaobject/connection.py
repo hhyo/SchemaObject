@@ -1,5 +1,16 @@
+# coding:utf-8
 import pymysql
 import re
+
+try:
+    basestring
+except NameError:
+    basestring = str
+
+try:
+    unicode
+except NameError:
+    unicode = str
 
 REGEX_RFC1738 = re.compile(r'''
             (?P<protocol>\w+)://
@@ -80,7 +91,7 @@ class DatabaseConnection(object):
         rows = cursor.fetchall()
 
         cursor.close()
-        a = [dict(zip(fields, row)) for row in rows]
+        a = [dict(list(zip(fields, row))) for row in rows]
         return a
 
     def connect(self, connection_url, charset):

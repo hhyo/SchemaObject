@@ -1,3 +1,10 @@
+== 0.5.10
+    * collections add python3 compatibility
+    * add coding header
+
+== 0.5.9
+    * Fix procedure compare
+
 == 0.5.8
 	* Fixed index dropping bug
 
